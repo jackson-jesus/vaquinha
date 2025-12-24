@@ -1,2 +1,0 @@
-# Vaquinha Emanuel
-
