@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ajude Emanuel a vencer o glaucoma e preservar sua visão. Doe qualquer valor ou compartilhe.">
+    <title>Vaquinha Emanuel</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Vaquinha para tratamento de glaucoma</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-image-wrapper">
+                        <!-- Portrait Image Placeholder -->
+                        <img src="assets/img/emanuel.jpg" alt="Foto de Emanuel" class="hero-img"
+                            onerror="this.onerror=null; this.src='https://placehold.co/400x500?text=Foto+de+Emanuel'">
+                    </div>
+                    <div class="hero-content">
+                        <span class="badge">Campanha de saúde</span>
+                        <h1>Ajude o Emanuel a preservar sua visão</h1>
+                        <p class="lead">Olá! Meu nome é Emanuel. Criei esta vaquinha porque estou enfrentando um momento
+                            delicado de saúde. Fui diagnosticado com <strong>glaucoma</strong>, uma doença silenciosa
+                            que exige tratamento rigoroso. Se puder me ajudar, agradeço muito!</p>
+
+                        <div class="cta-group">
+                            <button id="btn-pix" class="btn btn-primary btn-lg">
+                                <i data-lucide="copy"></i>
+                                Copiar chave PIX
+                            </button>
+                            <button id="btn-share" class="btn btn-secondary btn-lg">
+                                <i data-lucide="share-2"></i>
+                                Compartilhar página
+                            </button>
+                        </div>
+                        <p class="pix-key-display">Chave PIX: <strong>81985898200</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story">
+            <div class="container box-container">
+                <h2>Minha história</h2>
+                <p>Estou desempregado, apenas dado aulas esporádicas de musicalização com flauta doce para iniciantes
+                    (link no final) e
+                    não tenho condições de arcar com todos os custos
+                    imediatos que o tratamento exige.
+                    Faço o acompanhamento médico pelo SUS, no Hospital das Clínicas, HC, mas os insumos e óculos
+                    precisam
+                    ser
+                    comprados à parte.</p>
+
+                <div class="exam-section">
+                    <h3>Diagnóstico e transparência</h3>
+                    <div class="exam-image-wrapper">
+                        <!-- Exam Image Placeholder -->
+                        <img src="assets/img/exame.jpg" alt="Exame de Glaucoma" class="exam-img"
+                            onerror="this.onerror=null; this.src='https://placehold.co/800x400?text=Exame+Medico'">
+                    </div>
+                    <a href="https://docs.google.com/spreadsheets/d/10q0PNQnt_NLTk7gVq6CIVyLprxX-MORhZFi_KTBSI8E/edit?usp=sharing"
+                        target="_blank" class="btn btn-outline">
+                        <i data-lucide="file-spreadsheet"></i>
+                        Prestação de contas das doações nesta planilha pública
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="costs">
+            <div class="container">
+                <h2>Como sua doação será usada</h2>
+                <div class="costs-grid">
+                    <div class="cost-card">
+                        <div class="cost-header">
+                            <i data-lucide="glasses" class="cost-icon"></i>
+                            <h3>Óculos de grau completo</h3>
+                        </div>
+                        <div class="cost-amount">R$ 1.999,00</div>
+                        <p>Confecção das lentes e armação atualizadas. Necessito de lentes de qualidade superior para
+                            garantir conforto e a melhor correção possível.</p>
+                    </div>
+
+                    <div class="cost-card">
+                        <div class="cost-header">
+                            <i data-lucide="pill" class="cost-icon"></i>
+                            <h3>Manutenção do tratamento</h3>
+                        </div>
+                        <div class="cost-amount">R$ 2.800,00</div>
+                        <p>Compra recorrente dos colírios (de uso contínuo e alto custo) e despesa de transporte para os
+                            dias de exames e consultas no Hospital das Clínicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Mais uma vez, muito obrigado por ajudar!</p>
+            <p>Sua solidariedade faz toda a diferença.</p>
+
+            <a href="https://jackson-jesus.github.io/emanuel/" target="_blank" class="btn btn-primary"
+                style="margin-top: 2rem; width: 100%;">
+                <i data-lucide="music"></i>
+                Curso de musicalização com flauta doce para iniciantes
+            </a>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i data-lucide="check-circle"></i>
+        <span id="toast-message">Mensagem copiada!</span>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
